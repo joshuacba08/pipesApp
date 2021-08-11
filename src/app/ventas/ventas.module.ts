@@ -6,6 +6,7 @@ import { NumerosComponent } from './pages/numeros/numeros.component';
 import { NoComunesComponent } from './pages/no-comunes/no-comunes.component';
 import { BasicosComponent } from './pages/basicos/basicos.component';
 import { OrdenadosComponent } from './pages/ordenados/ordenados.component';
+import { MayusculasPipe } from './pipes/mayusculas.pipe';
 
 
 
@@ -15,7 +16,8 @@ import { OrdenadosComponent } from './pages/ordenados/ordenados.component';
     NumerosComponent,
     NoComunesComponent,
     BasicosComponent,
-    OrdenadosComponent
+    OrdenadosComponent,
+    MayusculasPipe
   ],
   exports:[
     NumerosComponent,
@@ -26,6 +28,7 @@ import { OrdenadosComponent } from './pages/ordenados/ordenados.component';
   imports: [
     CommonModule,
     PrimeNGModule,
+
   ]
 })
 export class VentasModule { }
