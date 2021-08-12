@@ -10,6 +10,7 @@ import { Color, Heroe } from '../../interface/ventas.interface';
 export class OrdenadosComponent  {
 
   enMayusculas: boolean = true;
+  orderBy: string = '';
   heroes: Heroe[] = [
     {
       nombre:'Superman',
@@ -20,11 +21,35 @@ export class OrdenadosComponent  {
       nombre: 'Batman',
       vuela: false,
       color:Color.negro,
-    }
+    },
+    {
+      nombre: 'Aquaman',
+      vuela: false,
+      color:Color.azul,
+    },
+    {
+      nombre: 'Robin',
+      vuela: false,
+      color:Color.verde,
+    },
+    {
+      nombre: 'Daredevil',
+      vuela: false,
+      color:Color.rojo,
+    },
+    {
+      nombre: 'Linterna Verde',
+      vuela: true,
+      color:Color.verde,
+    },
   ]
 
   cambiar() {
     this.enMayusculas = !this.enMayusculas;
+  }
+
+  cambiarOrden( valor:string ) {
+    this.orderBy = valor;
   }
 
 }
